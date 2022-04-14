@@ -14,6 +14,10 @@ body {
   color: #0f0c24;
 }
 
+.imageLogo {
+  height: 110px;
+}
+
 .button {
   outline: 0;
   position: relative;
