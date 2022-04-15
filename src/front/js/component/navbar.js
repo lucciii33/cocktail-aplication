@@ -30,14 +30,14 @@ export const Navbar = () => {
                   <ul className="navbar-nav ">
                     <li className="nav-item dropdown">
                       <h6
-                        className="nav-link dropdown-toggle"
+                        className="nav-link dropdown-toggle text-decoration-none"
                         href="#"
                         id="navbarDropdown"
                         role="button"
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
                       >
-                        favorites {store.favorites.length}
+                        Favorites {store.favorites.length}
                       </h6>
                       <ul
                         className="dropdown-menu"
@@ -46,7 +46,7 @@ export const Navbar = () => {
                         {store.favorites.map((fav, i) => {
                           return (
                             <li key={i}>
-                              <Link
+                              <Link className="text-decoration-none"
                                 to={{
                                   pathname: "information/" + fav.strDrink,
                                   state: fav,
@@ -62,7 +62,7 @@ export const Navbar = () => {
                           );
                         })}
                         <Link to="/favorite">
-                          <li>see fav</li>
+                          <li>See favorites</li>
                         </Link>
                       </ul>
                     </li>
@@ -79,7 +79,7 @@ export const Navbar = () => {
                     onClick={() => actions.logOut()}
                     style={{ color: "#0F0C24" }}
                   >
-                    Log out
+                    Logout
                   </h5>
                 ) : (
                   <Link to="/signin" className="logo">

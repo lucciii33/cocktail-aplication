@@ -224,3 +224,11 @@ body {
 h1 .title {
   color: #0f0c24;
 }
+
+.table-container {
+  width: 600px;
+}
+
+.card3 {
+  padding-bottom: 40px;
+}
